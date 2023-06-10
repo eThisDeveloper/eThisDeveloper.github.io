@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Website</title>
+  <style>
+    body {
+      background-color: #ffffff; /* Default color */
+    }
+  </style>
+  <script>
+    function changeColor() {
+      var color = window.location.hash.substring(1);
+      if (color) {
+        document.body.style.backgroundColor = "#" + color;
+      }
+    }
+
+    window.addEventListener("hashchange", changeColor);
+    window.addEventListener("DOMContentLoaded", changeColor);
+  </script>
+</head>
+<body>
+  <h1>Color Website</h1>
+  <p>Add a color code to the URL after the hash (e.g., #ff0000).</p>
+</body>
+</html>
