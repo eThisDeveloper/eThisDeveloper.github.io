@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 <head>
     <meta content="ThisDeveloper" property="og:title" />
     <meta content="professional idiot and unprofessional programmer" property="og:description" />
     <meta content="https://ethisdeveloper.github.io/thisdev.github.io/" property="og:url" />
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" type="image/png" href="assets/PlasmaTech.png"/>
     <title>ThisDeveloper</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="list">
-        <button class="btn" onclick="window.location.href='https://legacy.curseforge.com/members/this_developer/projects';">Mods</button>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('thisdev', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.background-color': '#323842',
+        'floating-chat.donateButton.text-color': '#fff'
+      });
+    </script>
+
+    <h1 class="center">I'm <span id="element"></span></h1>
+
+    <img src="assets/delta.png" alt="" class="pfp">
+
+    <div class="buttons">
         <button class="btn" onclick="window.location.href='https://github.com/eThisDeveloper';">Github</button>
         <button class="btn" onclick="window.location.href='https://www.youtube.com/channel/UC6vcDQGk31keqOQlO1jq8WQ';">Youtube</button>
         <button class="btn" onclick="window.location.href='https://www.twitch.tv/this_developer';">Twitch</button>
-        <button class="btn" onclick="window.location.href='https://ethideveloper.github.io/proj.html';">Projects</button>
+        <button class="btn" onclick="window.location.href='https://legacy.curseforge.com/members/this_developer/projects';">Curseforge</button>
     </div>
-    <div class="center">
-        <img src="/assets/pfp.png" alt="">
-        <h1>ThisDeveloper</h1>
-        <p>Content Creator<br>and Programmer</p>
-    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+        <script>
+             var typed = new Typed('#element', {
+            strings: ['an Idiot','a programmer','ThisDev'],
+            typeSpeed: 100,
+            });
+        </script>
 </body>
+</html>
